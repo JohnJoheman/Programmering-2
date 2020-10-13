@@ -12,7 +12,8 @@ namespace Laboration_1_OOP
     {
         public int _products;
         string yesOrNo;
-        Products products = new Products();
+        Shopping Shopping = new Shopping();
+        
 
 
         public void WelcomeCostumer()
@@ -30,7 +31,7 @@ namespace Laboration_1_OOP
                 {
                     Console.WriteLine("Great!");
                     Console.WriteLine();
-                    products.productsOrder();
+                    Shopping.productsOrder();
                 }
                 else if (yesOrNo == "2")
                 {
