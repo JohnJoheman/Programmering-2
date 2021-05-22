@@ -5,12 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Battleships"
         mc:Ignorable="d"
-        Title="MainWindow" Height="850" Width="1050">
+        Title="MainWindow" Height="850" Width="1550">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="162*"/>
-            <ColumnDefinition Width="717*"/>
-            <ColumnDefinition Width="163*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="538*"/>
+            <ColumnDefinition Width="337*"/>
+            <ColumnDefinition Width="538*"/>
+            <ColumnDefinition Width="100"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -19,11 +21,13 @@
             <RowDefinition Height="400*"/>
 
         </Grid.RowDefinitions>
-        <TextBlock Name="Battleships" Grid.Column="1" Text="Battleships" TextAlignment="Center" FontSize="40" Margin="25,6,26,7"/>
-        <Button Name="PlayAgain" Grid.Column="1" Content="PlayAgain" FontSize="30" Margin="477,59,10,7" />
-        <Grid Name="BattleGround" Loaded="MyGrid_Loaded" Grid.Column="1" Grid.Row="2" Margin="0,0,0,10" VerticalAlignment="top" HorizontalAlignment="Center" />
+        <TextBlock Name="Battleships" Grid.Column="2" Text="Battleships" TextAlignment="Center" FontSize="40" Margin="10"/>
+        <Button Name="PlayAgain" Grid.Column="2" Grid.Row="1" Content="PlayAgain" FontSize="30" Margin="30" />
+        
+        <Grid Name="BattleGround" Loaded="MyGrid_Loaded" Grid.Column="1" Grid.Row="2" Margin="0,0,0,10" VerticalAlignment="top" HorizontalAlignment="Left" />
+        <Grid Name="BattleGround2" Loaded="MyGrid_Loaded2" Grid.Column="3" Grid.Row="2" VerticalAlignment="top" HorizontalAlignment="Right"/>
 
-        <Grid Name="oneToTenHolder" Grid.Column="1" Grid.Row="2" Margin="25,-75,0,0" HorizontalAlignment="left" Height="450">
+        <Grid Name="oneToTenHolder" Grid.Column="0" Grid.Row="2" Margin="0,-85,10,0" HorizontalAlignment="right" Height="450">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -47,7 +51,31 @@
             <TextBlock Grid.Row="8" Text="9" FontSize="40" TextAlignment="Right"/>
             <TextBlock Grid.Row="9" Text="10" FontSize="40" TextAlignment="Right"/>
         </Grid>
-        <Grid Name="AtoJHolder" Grid.Column="1" Grid.Row="1" Margin="0,72,0,0" VerticalAlignment="bottom" Width="550">
+        <Grid Name="oneToTenHolder2" Grid.Column="4" Grid.Row="2" Margin="0,-85,10,0" HorizontalAlignment="Left" Height="450">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="1" FontSize="40" TextAlignment="Right"/>
+            <TextBlock Grid.Row="1" Text="2" FontSize="40" TextAlignment="Right"/>
+            <TextBlock Grid.Row="2" Text="3" FontSize="40" TextAlignment="Right"/>
+            <TextBlock Grid.Row="3" Text="4" FontSize="40" TextAlignment="Right"/>
+            <TextBlock Grid.Row="4" Text="5" FontSize="40" TextAlignment="Right"/>
+            <TextBlock Grid.Row="5" Text="6" FontSize="40" TextAlignment="Right"/>
+            <TextBlock Grid.Row="6" Text="7" FontSize="40" TextAlignment="Right"/>
+            <TextBlock Grid.Row="7" Text="8" FontSize="40" TextAlignment="Right"/>
+            <TextBlock Grid.Row="8" Text="9" FontSize="40" TextAlignment="Right"/>
+            <TextBlock Grid.Row="9" Text="10" FontSize="40" TextAlignment="Right"/>
+        </Grid>
+        <Grid Name="AtoJHolder" Grid.Column="1" Grid.Row="1" Margin="0,80,0,0" VerticalAlignment="Bottom" HorizontalAlignment="left" Width="500">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -70,7 +98,30 @@
             <TextBlock Grid.Column="7" Text="H" FontSize="40" TextAlignment="center"/>
             <TextBlock Grid.Column="8" Text="I" FontSize="40" TextAlignment="center"/>
             <TextBlock Grid.Column="9" Text="J" FontSize="40" TextAlignment="center"/>
-            
+        </Grid>
+        <Grid Name="AtoJHolder2" Grid.Column="3" Grid.Row="1" Margin="0,80,0,0" VerticalAlignment="Bottom" HorizontalAlignment="left" Width="500">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="A" FontSize="40" TextAlignment="center"/>
+            <TextBlock Grid.Column="1" Text="B" FontSize="40" TextAlignment="center"/>
+            <TextBlock Grid.Column="2" Text="C" FontSize="40" TextAlignment="center"/>
+            <TextBlock Grid.Column="3" Text="D" FontSize="40" TextAlignment="center"/>
+            <TextBlock Grid.Column="4" Text="E" FontSize="40" TextAlignment="center"/>
+            <TextBlock Grid.Column="5" Text="F" FontSize="40" TextAlignment="center"/>
+            <TextBlock Grid.Column="6" Text="G" FontSize="40" TextAlignment="center"/>
+            <TextBlock Grid.Column="7" Text="H" FontSize="40" TextAlignment="center"/>
+            <TextBlock Grid.Column="8" Text="I" FontSize="40" TextAlignment="center"/>
+            <TextBlock Grid.Column="9" Text="J" FontSize="40" TextAlignment="center"/>
         </Grid>
     </Grid>
 </Window>

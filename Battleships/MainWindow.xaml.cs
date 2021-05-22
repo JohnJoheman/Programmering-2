@@ -30,10 +30,10 @@ namespace Battleships
             for(int i = 0; i < 10; i++)
             {
                 var row = new RowDefinition();
-                row.Height = new GridLength(46);
+                row.Height = new GridLength(45);
                 BattleGround.RowDefinitions.Add(row);
                 var col = new ColumnDefinition();
-                col.Width = new GridLength(55);
+                col.Width = new GridLength(50);
                 BattleGround.ColumnDefinitions.Add(col);
 
                 for (int j = 0; j < 10; j++)
@@ -48,8 +48,37 @@ namespace Battleships
                 }
 
             }
+
         }
 
-        
+        private void MyGrid_Loaded2(object sender, RoutedEventArgs e)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                var row = new RowDefinition();
+                row.Height = new GridLength(45);
+                BattleGround2.RowDefinitions.Add(row);
+                var col = new ColumnDefinition();
+                col.Width = new GridLength(50);
+                BattleGround2.ColumnDefinitions.Add(col);
+
+                for (int j = 0; j < 10; j++)
+                {
+                    var button = new Button();
+                    button.Click += new RoutedEventHandler((x, y) => {
+                        button.Content = "Hit";
+                    });
+                    Grid.SetRow(button, i);
+                    Grid.SetColumn(button, j);
+                    BattleGround2.Children.Add(button);
+                }
+
+            }
+
+        }
+
+
+
+
     }
 }
