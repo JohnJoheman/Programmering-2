@@ -91,6 +91,10 @@ namespace Quiz_Game_Wpf
         //Metoden gör så att spelet fortsätter tills dess att alla frågor är besvarade. 
         //Då startar den om allting automatiskt. 
         //questionNumber.Count är hur många tal/ints listan innehåller, alltså 10 i detta fallet. 
+        //qNum börjar på -1 och fortsätter tills listans längd är uppnådd (10)
+        //Som jag nämnde innan är qNum satt till -1 för att jag vill att man måste trycka ytterliggare en gång
+        //på något svaralternativ innan spelet börjar om. Hade qNum varit = 0 så hade spelet börjat om direkt
+        //efter att sista frågan blivit besvarad.
         private void NextQuestion()
         {
             if(qNum < questionNumbers.Count)
@@ -284,7 +288,7 @@ namespace Quiz_Game_Wpf
 
         }
 
-        //En metod som startar spelet och går från fråga 1 till 10.
+        //En metod som startar spelet och går från fråga 1 till 10 sålänge i är mindre än listans längd. 
         private void StartGame()
         {
 
