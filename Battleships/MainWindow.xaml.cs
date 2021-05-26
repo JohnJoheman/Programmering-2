@@ -25,7 +25,25 @@ namespace Battleships
             InitializeComponent();
         }
 
-        private void MyGrid_Loaded(object sender, RoutedEventArgs e)
+        public int[,] buttonListPlayer1 = new int[10, 10]
+        {
+            {0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ,
+            {0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ,
+            {0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ,
+            {0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ,
+            {0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ,
+            {0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ,
+            {0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ,
+            {0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ,
+            {0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ,
+            {0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ,
+
+          
+        };
+
+       
+
+        public void MyGrid_Loaded(object sender, RoutedEventArgs e)
         {
             for(int i = 0; i < 10; i++)
             {
@@ -39,8 +57,18 @@ namespace Battleships
                 for (int j = 0; j < 10; j++)
                 {
                     var button = new Button();
+                    int[,] buttonListPlayer1 = new int[10, 10];
+                    
+
                     button.Click += new RoutedEventHandler((x, y) => {
-                        button.Content = "Hit";
+                        var Row = Grid.GetRow(button);
+                        var Column = Grid.GetColumn(button);
+                        buttonListPlayer1[Row, Column] = 1;
+
+                        if (buttonListPlayer1 = 1)
+                        {
+                            button.Content = 1;
+                        }
                     });
                     Grid.SetRow(button, i);
                     Grid.SetColumn(button, j);
@@ -48,6 +76,8 @@ namespace Battleships
                 }
 
             }
+
+
 
         }
 
@@ -65,9 +95,6 @@ namespace Battleships
                 for (int j = 0; j < 10; j++)
                 {
                     var button = new Button();
-                    button.Click += new RoutedEventHandler((x, y) => {
-                        button.Content = "Hit";
-                    });
                     Grid.SetRow(button, i);
                     Grid.SetColumn(button, j);
                     BattleGround2.Children.Add(button);
@@ -78,6 +105,11 @@ namespace Battleships
         }
 
 
+        
+        public void Game()
+        {
+
+        }
 
 
     }
