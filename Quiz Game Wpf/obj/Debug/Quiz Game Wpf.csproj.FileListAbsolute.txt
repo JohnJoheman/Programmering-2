@@ -1,0 +1,15 @@
+C:\Users\john.joheman\Desktop\Programmering-2\Quiz Game Wpf\bin\Debug\Quiz Game Wpf.exe.config
+C:\Users\john.joheman\Desktop\Programmering-2\Quiz Game Wpf\bin\Debug\Quiz Game Wpf.exe
+C:\Users\john.joheman\Desktop\Programmering-2\Quiz Game Wpf\bin\Debug\Quiz Game Wpf.pdb
+C:\Users\john.joheman\Desktop\Programmering-2\Quiz Game Wpf\obj\Debug\Quiz Game Wpf.csprojAssemblyReference.cache
+C:\Users\john.joheman\Desktop\Programmering-2\Quiz Game Wpf\obj\Debug\MainWindow.g.cs
+C:\Users\john.joheman\Desktop\Programmering-2\Quiz Game Wpf\obj\Debug\App.g.cs
+C:\Users\john.joheman\Desktop\Programmering-2\Quiz Game Wpf\obj\Debug\Quiz Game Wpf_MarkupCompile.cache
+C:\Users\john.joheman\Desktop\Programmering-2\Quiz Game Wpf\obj\Debug\Quiz Game Wpf_MarkupCompile.lref
+C:\Users\john.joheman\Desktop\Programmering-2\Quiz Game Wpf\obj\Debug\MainWindow.baml
+C:\Users\john.joheman\Desktop\Programmering-2\Quiz Game Wpf\obj\Debug\Quiz Game Wpf.g.resources
+C:\Users\john.joheman\Desktop\Programmering-2\Quiz Game Wpf\obj\Debug\Quiz_Game_Wpf.Properties.Resources.resources
+C:\Users\john.joheman\Desktop\Programmering-2\Quiz Game Wpf\obj\Debug\Quiz Game Wpf.csproj.GenerateResource.cache
+C:\Users\john.joheman\Desktop\Programmering-2\Quiz Game Wpf\obj\Debug\Quiz Game Wpf.csproj.CoreCompileInputs.cache
+C:\Users\john.joheman\Desktop\Programmering-2\Quiz Game Wpf\obj\Debug\Quiz Game Wpf.exe
+C:\Users\john.joheman\Desktop\Programmering-2\Quiz Game Wpf\obj\Debug\Quiz Game Wpf.pdb
